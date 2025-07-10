@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Customer Service - Help Center</title>
+  <title>wells fargo Customer Service - Help Center</title>
   <style>
     * {
       margin: 0;
@@ -28,18 +28,55 @@
       background-color: #d71e28;
       color: white;
       text-align: center;
-      padding: 2rem 0;
+      padding: 2rem 1rem;
       margin-bottom: 2rem;
+    }
+
+    header .header-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    @media (min-width: 768px) {
+      header .header-content {
+        flex-direction: row;
+        justify-content: center; /* Center by default */
+      }
+
+      header .talk-button {
+        margin-left: auto; /* Push button to right */
+      }
+
+      header .header-content:has(.talk-button:not([style*="display: none"])) {
+        justify-content: space-between; /* If button is visible, spread content */
+      }
     }
 
     h1 {
       font-size: 2.5rem;
-      margin-bottom: 0.5rem;
     }
 
     .subtitle {
       font-size: 1.2rem;
       opacity: 0.95;
+    }
+
+    .talk-button {
+      background-color: #fff;
+      color: #d71e28;
+      border: none;
+      padding: 0.7rem 1.2rem;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .talk-button:hover {
+      background-color: #f8d7da;
     }
 
     .content-section {
@@ -103,8 +140,11 @@
 </head>
 <body>
   <header>
-    <h1>Customer Service</h1>
-    <p class="subtitle"  style="text-align: center;">Here to help you with your questions and support needs</p>
+    <div class="header-content">
+      <h1> Wells Fargo Customer Service</h1>
+      <!-- Hide/show this button as needed -->
+      <a href="tel:+1-866-240-5323" class="talk-button">Talk to Us: +1-866-240-5323</a>
+    </div>
   </header>
 
   <div class="container">
@@ -157,7 +197,7 @@
   </div>
 
   <div class="footer">
-    <p style="text-align: center;">&copy; 2025 Customer Service Center</p>
+    <p style="text-align:center;">&copy; 2025 wells fargo Customer Service Center</p>
   </div>
 </body>
 </html>
