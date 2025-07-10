@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Citibank Customer Service - Help Center</title>
+  <title>Customer Service - Help Center</title>
   <style>
     * {
       margin: 0;
@@ -70,6 +70,15 @@
       text-align: justify;
     }
 
+    ul {
+      padding-left: 20px;
+      margin-bottom: 1rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
     .faq-item {
       margin-bottom: 1.5rem;
       padding: 1rem;
@@ -81,54 +90,6 @@
       font-weight: bold;
       color: #d71e28;
       margin-bottom: 0.5rem;
-    }
-
-    .policy-highlight {
-      background-color: #fff0f0;
-      padding: 1rem;
-      border-radius: 5px;
-      margin: 1rem 0;
-      border-left: 4px solid #e74c3c;
-    }
-
-    .steps {
-      counter-reset: step-counter;
-    }
-
-    .step {
-      counter-increment: step-counter;
-      margin-bottom: 1rem;
-      padding: 1rem;
-      background-color: #fff0f0;
-      border-radius: 5px;
-      position: relative;
-      padding-left: 3rem;
-    }
-
-    .step::before {
-      content: counter(step-counter);
-      position: absolute;
-      left: 1rem;
-      top: 1rem;
-      background-color: #e74c3c;
-      color: white;
-      width: 1.5rem;
-      height: 1.5rem;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: bold;
-      font-size: 0.9rem;
-    }
-
-    .warning {
-      background-color: #fff0f0;
-      color: #d71e28;
-      padding: 1rem;
-      border-radius: 5px;
-      border-left: 4px solid #e74c3c;
-      margin: 1rem 0;
     }
 
     .footer {
@@ -143,87 +104,60 @@
 <body>
   <header>
     <h1>Customer Service</h1>
-    <p class="subtitle" style="text-align:center;">We're here to help you with all your questions and concerns</p>
+    <p class="subtitle"  style="text-align: center;">Here to help you with your questions and support needs</p>
   </header>
 
   <div class="container">
     <div class="content-section">
+      <h2>Our Promise</h2>
+      <p>We are dedicated to providing friendly, reliable, and effective support to all our customers. Our team is trained to assist you with your questions, resolve issues, and ensure you have the best experience possible.</p>
+      <p>No matter what your concern is, we’re here to help you find the right solution quickly and easily. Your satisfaction is our priority.</p>
+    </div>
+
+    <div class="content-section">
+      <h2>What We Can Help With</h2>
+      <p>Our customer service team can assist you with a variety of topics:</p>
+      <ul>
+        <li>Answering general questions about our services.</li>
+        <li>Providing information about how to use our products.</li>
+        <li>Helping you troubleshoot common issues.</li>
+        <li>Offering tips and guidance for a better experience.</li>
+        <li>Listening to your feedback and suggestions.</li>
+      </ul>
+    </div>
+
+    <div class="content-section">
       <h2>Frequently Asked Questions</h2>
 
       <div class="faq-item">
-        <div class="faq-question">How can I track my order?</div>
-        <p>Once your order is shipped, you will receive a tracking number via email. You can use this number to track your package on our website or the carrier's website. Orders typically take 3-7 business days to arrive.</p>
+        <div class="faq-question">How can I reach customer support?</div>
+        <p>You can get in touch with us through our support hotline, live chat, or by sending us a message through our contact form. We’re here to help you every day.</p>
       </div>
 
       <div class="faq-item">
-        <div class="faq-question">What is your return policy?</div>
-        <p>We accept returns within 30 days of purchase. Items must be in original condition with tags attached. Return shipping is free for defective items, while customer returns may incur a small shipping fee.</p>
+        <div class="faq-question">Can I update my account details?</div>
+        <p>Yes, you can update your contact information and other details by logging into your profile or by reaching out to our support team for help.</p>
       </div>
 
       <div class="faq-item">
-        <div class="faq-question">How do I cancel my order?</div>
-        <p>Orders can be cancelled within 24 hours of placement. After this time, the order may have already been processed for shipping. Please check your order status in your account dashboard.</p>
+        <div class="faq-question">How secure is my information?</div>
+        <p>We take privacy seriously and use modern security measures to protect your information. Always keep your login details safe and never share them with anyone.</p>
       </div>
 
       <div class="faq-item">
-        <div class="faq-question">Do you offer international shipping?</div>
-        <p>Yes, we ship to most countries worldwide. International shipping costs and delivery times vary by location. Additional customs fees may apply depending on your country's regulations.</p>
-      </div>
-
-      <div class="faq-item">
-        <div class="faq-question">How can I update my account information?</div>
-        <p>You can update your account information by logging into your account dashboard. From there, you can change your address, payment methods, and personal details.</p>
+        <div class="faq-question">What should I do if I forget my password?</div>
+        <p>You can easily reset your password using the 'Forgot Password' link on the login page. If you need help, our support team can assist you at any time.</p>
       </div>
     </div>
 
     <div class="content-section">
-      <h2>Return & Exchange Process</h2>
-
-      <div class="steps">
-        <div class="step">
-          <strong>Check Eligibility:</strong> Ensure your item is within the 30-day return window and meets our return conditions.
-        </div>
-        <div class="step">
-          <strong>Initiate Return:</strong> Log into your account and select the order you wish to return. Choose the items and reason for return.
-        </div>
-        <div class="step">
-          <strong>Print Return Label:</strong> Download and print the prepaid return shipping label provided.
-        </div>
-        <div class="step">
-          <strong>Package Items:</strong> Securely package the items in their original packaging with all tags and accessories.
-        </div>
-        <div class="step">
-          <strong>Ship Back:</strong> Attach the return label and drop off at any authorized shipping location.
-        </div>
-        <div class="step">
-          <strong>Receive Refund:</strong> Once we receive and inspect your return, your refund will be processed within 5-7 business days.
-        </div>
-      </div>
-    </div>
-
-    <div class="content-section">
-      <h2>Order Issues & Resolution</h2>
-
-      <h3>Damaged or Defective Items</h3>
-      <p>If you receive a damaged or defective item, please report any issues within 7 days of receiving your order. We'll need your order number and photos of the damaged item to process your replacement quickly.</p>
-
-      <h3>Wrong Item or Missing Items</h3>
-      <p>If you received the wrong item or have missing items, we'll send you the correct items and provide a prepaid return label if needed. Please check your order confirmation email first to verify what was ordered.</p>
-    </div>
-
-    <div class="content-section">
-      <h2>Account & Payment Support</h2>
-
-      <h3>Account Access Problems</h3>
-      <p>If you're having trouble accessing your account, try resetting your password using the "Forgot Password" link. Make sure you're using the correct email address associated with your account.</p>
-
-      <h3>Payment Issues</h3>
-      <p>We accept all major credit cards, PayPal, and digital wallets. If your payment is declined, please check with your bank. Ensure your billing address matches the address on file with your bank.</p>
+      <h2>Contact Us Anytime</h2>
+      <p>Our team is ready to answer your questions and assist you whenever you need help. Reach out through phone, chat, or email — we look forward to hearing from you and helping you have the best possible experience with us.</p>
     </div>
   </div>
 
   <div class="footer">
-    <p style="text-align:center;">&copy; 2025 Customer Service Center</p>
+    <p style="text-align: center;">&copy; 2025 Customer Service Center</p>
   </div>
 </body>
 </html>
